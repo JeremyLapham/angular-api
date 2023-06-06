@@ -1,10 +1,11 @@
-<div class="columns">
-  <div class="column">
-    <p class="title is-2 pt-4 pl-4">{{ category }}</p>
+<div class="container">
+  <div class="columns">
+    <div class="column">
+      <p class="title is-2 pt-4 pl-4">{{ category }}</p>
+    </div>
   </div>
-</div>
-<div class="columns">
-  <div class="column">
+  <div class="columns">
+    <div class="column">
     <p class="title is-3 pt-4 pl-4">{{ setUp }}</p>
   </div>
 </div>
@@ -16,5 +17,13 @@
 <div class="columns">
   <div class="column">
     <p class="title is-3 pt-4 pl-4">{{ joke }}</p>
-  </div>
+  </div> 
+</div>
+<div class="columns">
+  <div class="column">
+    <button (click)="callJoke()" class="button is-info">
+      Click for another joke
+    </button>
+  </div> 
+</div>
 </div>

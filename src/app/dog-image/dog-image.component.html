@@ -1,5 +1,16 @@
 <div class="container">
-    <figure>
-        <img class="image" [src]="imageUrl" alt="This image doesnt exist click again :("/>
-    </figure>
+    <div class="columns">
+        <div class="column">
+            <figure>
+                <img class="image" [src]="image" alt="This image doesnt exist click again :(" />
+            </figure>
+        </div>
+    </div>
+    <div class="columns">
+        <div class="column">
+            <button (click)="callFunction()" class="button is-info">
+                Click me for more dog pictures
+            </button>
+        </div>
+    </div>
 </div>
